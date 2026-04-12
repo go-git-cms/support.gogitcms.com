@@ -1,0 +1,19 @@
+# yaml-language-server: $schema=https://app.gogitcms.com/schemas/go-git-cms.json
+# GoGitCMS schema configuration
+# See: https://docs.gogitcms.com/schema
+
+version: 1
+contentModels:
+  - name: issues
+    path: "content/issues/*.yaml"
+    format: yaml
+    fields:
+      - name: title
+        type: string
+        required: true
+        entry_title: true
+      - name: description
+        type: string
+        required: true
+      - name: date
+        type: string
