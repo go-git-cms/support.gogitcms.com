@@ -4,9 +4,11 @@
 
 version: 1
 contentModels:
-  - name: issues
-    path: "content/issues/*.yaml"
-    format: yaml
+  - name: posts
+    path: "src/content/issues/*.md"
+    format: markdown
+    frontmatter_format: yaml
+    markdown_flavor: gfm
     fields:
       - name: title
         type: string
@@ -17,3 +19,14 @@ contentModels:
         required: true
       - name: date
         type: string
+        required: true
+      - name: cms_version
+        type: string
+      - name: type
+        type: string
+        enum:
+          - question
+          - bug
+          - other
+        display:
+          component: select
