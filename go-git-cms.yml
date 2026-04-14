@@ -4,7 +4,7 @@
 
 version: 1
 contentModels:
-  - name: posts
+  - name: issues
     path: "src/content/issues/*.md"
     format: markdown
     frontmatter_format: yaml
