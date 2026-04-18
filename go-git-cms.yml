@@ -3,7 +3,7 @@
 # See: https://docs.gogitcms.com/schema
 
 version: 1
-contentModels:
+content_models:
   - name: issues
     path: "src/content/issues/*.md"
     format: markdown
